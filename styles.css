@@ -142,7 +142,7 @@ ul {
 /*Her0*/
 
 .hero {
-    background: url('../images/illustration_background.png') no-repeat 0 0;
+    background: url('../portfolio/images/illustration_background.png') no-repeat 0 0;
     background-size: 1550px;
     background-position: center top;
     background-attachment: fixed;
