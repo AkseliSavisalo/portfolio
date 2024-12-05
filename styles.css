@@ -356,6 +356,10 @@ ul {
     margin: auto;
     width: 50vw;}
 
+.copyright-text {
+    color: var(--pressed-gray);
+    font-size: 0.85rem;}
+
 
 
 /*Video*/
