@@ -12,7 +12,7 @@ window.addEventListener('scroll', function(){
     let value = window.scrollY;
     projectBackground.style.top = value * 0.4 + 'px';
     mobileProjectBackground.style.top = value * 0.4 + 'px';
-    heroContent.style.top = value * 0.9 + 'px';
+    heroContent.style.top = value * 0.85 + 'px';
     overlay1.style.top = value * 0.9 + 'px';
     overlay2.style.top = value * 0.8 + 'px';
     overlay3.style.top = value * 0.7 + 'px';

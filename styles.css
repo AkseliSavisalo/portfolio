@@ -171,7 +171,7 @@ ul {
     
 .overlay-container {
     position: absolute;
-    bottom: -130px;
+    top: 0;
     left: 0;
     width: 100%;
     height: 1080px;
@@ -180,29 +180,35 @@ ul {
 .overlay {
     pointer-events: none;
     position: absolute;
-    left:  calc(-775px + 50vw);
-    width: 1550px;
+    left:  calc(-800px + 50%);
+    width: 1600px;
     height: auto;}
 
 .overlay1 {
     z-index: 501;
-    transform: translateY(190px);}
+    transform: translateY(0);}
 
 .overlay2 {
     z-index: 502;
-    transform: translateY(200px);}
+    transform: translateY(0);}
 
 .overlay3 {
     z-index: 504;
-    transform: translateY(220px);}
+    transform: translateY(0);}
 
 .overlay4 {
     z-index: 505;
-    transform: translateY(250px);}
+    transform: translateY(0);}
 
 .overlay5 {
     z-index: 506;
-    transform: translateY(60px);}
+    transform: translateY(0);}
+
+.overlay-mobile {
+    display: none;}
+
+.overlay-mobile-motherfucker{
+    z-index: 504;}
 
 
     
@@ -483,39 +489,33 @@ ul {
 
 @media (max-width: 960px){
     .hero {
-        background-size: 1000px;}
+        background-size: 1200px;}
 
     .overlay {
-        left:  calc(-500px + 50vw);
-        width: 1000px;}
+        left:  calc(-600px + 50%);
+        width: 1200px;}
     
     .overlay1 {
-        transform: translateY(250px);}
+        transform: translateY(-20px);}
     
     .overlay2 {
-        transform: translateY(240px);}
+        transform: translateY(0);}
     
     .overlay3 {
-        transform: translateY(320px);}
+        transform: translateY(60px);}
     
     .overlay4 {
-        transform: translateY(360px);}
+        transform: translateY(80px);}
     
     .overlay5 {
-        transform: translateY(170px);}
-    
-    .hero-content {
-        width: 500px;}
+        transform: translateY(100px);}
     
     .text-xxl{
         font-size: 5rem;
-        padding: 50% 0 0;}
+        padding: 45% 0 0;}
 
     .hero-text {
         font-size: 1.2rem;}
-
-    .portfolio {
-        padding-top: 100px;}
 
     .project-background {
         display: none;}
@@ -524,24 +524,35 @@ ul {
         display: block;}}
 
 @media (max-width: 670px){
-    .overlay {
-        left:  calc(-350px + 50vw);
-        width: 700px;}
+    .hero {
+        background: none;}
+
+    .hero .container {
+        height: 910px;}
+
+    .overlay-mobile {
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left:  calc(-263px + 50%);
+        height: 950px;
+        width: auto;
+        display: block;}
     
     .overlay1 {
-        transform: translateY(380px);}
+        display: none;}
         
     .overlay2 {
-        transform: translateY(380px);}
+        display: none;}
         
     .overlay3 {
-        transform: translateY(420px);}
+        display: none;}
         
     .overlay4 {
-        transform: translateY(480px);}
+        display: none;}
         
     .overlay5 {
-        transform: translateY(320px);}
+        display: none;}
 
     .navbar .main-menu {
         display: none;}
@@ -551,9 +562,6 @@ ul {
     
     .navbar .mobile-menu {
         display: block;}
-
-    .hero {
-        background-size: 700px;}
 
     .hero-content {
         width: 380px;}
@@ -565,10 +573,8 @@ ul {
     .hero-text {
         font-size: 1.1rem;}
 
-    .portfolio {
-        padding-top: 150px;}
-
     .portfolio-heading {
+        margin-top: -200px;
         font-size: 4rem;}
     
     .project-thumb {
