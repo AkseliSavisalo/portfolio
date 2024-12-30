@@ -15,8 +15,8 @@ window.addEventListener('scroll', function(){
     heroContent.style.top = value * 0.85 + 'px';
     overlay1.style.top = value * 0.9 + 'px';
     overlay2.style.top = value * 0.8 + 'px';
-    overlay3.style.top = value * 0.7 + 'px';
-    overlay4.style.top = value * 0.5 + 'px';
+    overlay3.style.top = value * 0.6 + 'px';
+    overlay4.style.top = value * 0.3 + 'px';
     overlay5.style.top = value * 0 + 'px';
 })
 

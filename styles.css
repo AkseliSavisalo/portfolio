@@ -226,6 +226,7 @@ ul {
 
 .project-background {
     position: absolute;
+    top: 0;
     margin-top: -600px;
     left: calc(50vw - 410px);
     object-fit: cover;
@@ -234,6 +235,7 @@ ul {
 .mobile-project-background {
     display: none;
     position: absolute;
+    top: 0;
     margin-top: -400px;
     left: calc(50vw - 160px);
     object-fit: cover;
