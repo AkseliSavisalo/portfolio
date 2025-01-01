@@ -143,7 +143,7 @@ ul {
 
 .hero {
     background: url('../images/illustration_background.png') no-repeat;
-    background-size: 1550px;
+    background-size: 1498px;
     background-position: center top;
     background-attachment: fixed;
     overflow: clip;}
@@ -164,7 +164,7 @@ ul {
     font-size: 6rem;
     line-height: 1.15;
     font-weight: 100;
-    padding: 55% 0% 0%;}
+    padding: 45% 0% 0%;}
 
 .hero-text {
     font-size: 1.3rem;}
@@ -180,8 +180,8 @@ ul {
 .overlay {
     pointer-events: none;
     position: absolute;
-    left:  calc(-800px + 50%);
-    width: 1600px;
+    left:  calc(-750px + 50%);
+    width: 1500px;
     height: auto;}
 
 .overlay1 {
@@ -201,6 +201,11 @@ ul {
     transform: translateY(0);}
 
 .overlay5 {
+    z-index: 506;
+    transform: translateY(0);}
+
+.overlay5-tablet {
+    display: none;
     z-index: 506;
     transform: translateY(0);}
 
@@ -489,36 +494,7 @@ ul {
 
 /*Media queries*/
 
-@media (max-width: 960px){
-    .hero {
-        background-size: 1200px;}
-
-    .overlay {
-        left:  calc(-600px + 50%);
-        width: 1200px;}
-    
-    .overlay1 {
-        transform: translateY(-20px);}
-    
-    .overlay2 {
-        transform: translateY(0);}
-    
-    .overlay3 {
-        transform: translateY(60px);}
-    
-    .overlay4 {
-        transform: translateY(80px);}
-    
-    .overlay5 {
-        transform: translateY(100px);}
-    
-    .text-xxl{
-        font-size: 5rem;
-        padding: 45% 0 0;}
-
-    .hero-text {
-        font-size: 1.2rem;}
-
+@media (max-width: 960px){ 
     .project-background {
         display: none;}
 
