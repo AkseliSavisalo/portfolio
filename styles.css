@@ -204,11 +204,6 @@ ul {
     z-index: 506;
     transform: translateY(0);}
 
-.overlay5-tablet {
-    display: none;
-    z-index: 506;
-    transform: translateY(0);}
-
 .overlay-mobile {
     display: none;}
 
@@ -514,7 +509,7 @@ ul {
         pointer-events: none;
         position: absolute;
         top: 0;
-        left:  calc(-263px + 50%);
+        left:  calc(-360px + 50%);
         height: 950px;
         width: auto;
         display: block;}
