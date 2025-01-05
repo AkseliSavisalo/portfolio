@@ -113,7 +113,7 @@ ul {
     right: 0;
     top: -1000px;
     width: 100%;
-    height: 110vh;
+    height: 140vh;
     z-index: 999;
     background: black;
     transition: top 0.3s ease-in-out;
@@ -211,7 +211,20 @@ ul {
     z-index: 504;}
 
 
-    
+
+/*Stamp*/
+
+.under-construction-stamp {
+    display: block;         /*<--- Deactivate here!!*/
+    position: absolute;
+    z-index: 997;
+    width: 250px;
+    left: calc(-125px + 40%);
+    margin-top: 150px;
+    transform: rotate(15deg);}
+
+
+
 /*Portfolio*/
 
 .portfolio {
@@ -229,6 +242,7 @@ ul {
     top: 0;
     margin-top: -600px;
     left: calc(50vw - 410px);
+    width: 820px;
     object-fit: cover;
     z-index: -100;}
 
@@ -238,6 +252,7 @@ ul {
     top: 0;
     margin-top: -400px;
     left: calc(50vw - 160px);
+    width: 320px;
     object-fit: cover;
     z-index: -100;}
 
@@ -547,6 +562,11 @@ ul {
 
     .hero-text {
         font-size: 1.1rem;}
+
+    .under-construction-stamp {
+        width: 200px;
+        margin-top: 20px;
+        left: calc(-100px + 35%);}
 
     .portfolio-heading {
         margin-top: -200px;
