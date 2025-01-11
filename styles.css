@@ -361,8 +361,13 @@ ul {
     padding-bottom: 50px;}
 
 .vertical-gallery-item {
-    max-height: 95vh;
+    max-height: 85vh;
     max-width: 80vw;}
+
+.lin-profile-pic {
+    max-height: 400px;
+    margin-top: -100px;
+    padding-bottom: 0;}
 
 .vertical-gallery-text {
     padding-top: 20px;
@@ -569,7 +574,7 @@ ul {
         left: calc(-100px + 35%);}
 
     .portfolio-heading {
-        margin-top: -200px;
+        margin-top: 20px;
         font-size: 4rem;}
     
     .project-thumb {
