@@ -20,6 +20,8 @@ window.addEventListener('scroll', function(){
     overlay5.style.top = value * 0 + 'px';
 })
 
+
+// Open images fullscreen
 document.onclick = (event) => {
     if (document.fullscreenElement) {
       document
