@@ -215,7 +215,7 @@ ul {
 /*Stamp*/
 
 .under-construction-stamp {
-    display: block;         /*<--- Deactivate here!!*/
+    display: block;         /*<--- Deactivate here!! block=on, none=off */
     position: absolute;
     z-index: 997;
     width: 250px;
@@ -237,23 +237,28 @@ ul {
     position: relative;
     z-index: 600;}
 
-.project-background {
+.background-repeat {
+    display: block;
     position: absolute;
+    background-image: url("/images/square_wave.png");
+    background-repeat: repeat-y;
     top: 0;
     margin-top: -600px;
-    left: calc(50vw - 410px);
-    width: 820px;
-    object-fit: cover;
+    width: 800px;
+    height: 100%;
+    left: calc(50vw - 400px);
     z-index: -100;}
 
-.mobile-project-background {
+.background-repeat-mobile {
     display: none;
     position: absolute;
+    background-image: url("/images/square_wave_mobile.png");
+    background-repeat: repeat-y;
     top: 0;
-    margin-top: -400px;
-    left: calc(50vw - 160px);
+    margin-top: -600px;
     width: 320px;
-    object-fit: cover;
+    height: 100%;
+    left: calc(50vw - 160px);
     z-index: -100;}
 
 .portfolio-heading {
@@ -545,17 +550,17 @@ ul {
     border: 0;}
 
 .half-size {
-    max-width: 50vw;}
+    max-width: 25vw;}
 
 
 
 /*Media queries*/
 
 @media (max-width: 960px){ 
-    .project-background {
+    .background-repeat {
         display: none;}
 
-    .mobile-project-background {
+    .background-repeat-mobile {
         display: block;}}
 
 @media (max-width: 670px){
