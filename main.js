@@ -21,12 +21,42 @@ window.addEventListener('scroll', function(){
 })
 
 
-// Open images fullscreen
+
+// Open images in fullscreen
 document.onclick = (event) => {
     if (document.fullscreenElement) {
       document
         .exitFullscreen()
 }}
+
+
+
+// Header hide
+const body = document.body;
+const nav = document.querySelector(".navbar");
+const scrollUp = "scroll-up";
+const scrollDown = "scroll-down";
+let lastScroll = 0;
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll <= 0) {
+    body.classList.remove(scrollUp);
+    return;}
+  if (currentScroll > lastScroll && !body.classList.contains(scrollDown)) {
+    // down
+    body.classList.remove(scrollUp);
+    body.classList.add(scrollDown);
+    lottiePlayer.play();}
+    else if ( currentScroll < lastScroll && body.classList.contains(scrollDown)) {
+    // up
+    body.classList.remove(scrollDown);
+    body.classList.add(scrollUp);
+    lottiePlayer.stop();}
+  lastScroll = currentScroll;
+});
+
+
 
 // Mobile menu
 document.addEventListener('DOMContentLoaded', () => {
@@ -56,51 +86,3 @@ document.addEventListener('DOMContentLoaded', () => {
         line2.classList.toggle('active') &
         line3.classList.toggle('active'))
 })
-
-
-
-// Video player
-/*
-const videoPlayer = document.querySelector('.video-player')
-const galleryVideo = videoPlayer.querySelector('.gallery-video')
-const playButton = videoPlayer.querySelector('.play-button')
-const volume = videoPlayer.querySelector('.volume')
-const currentTimeElement = videoPlayer.querySelector('.current')
-const durationTimeElement = videoPlayer.querySelector('.duration')
-
-// Play & pause
-playButton.addEventListener('click', (e) => {
-    if(galleryVideo.paused){
-        galleryVideo.play()
-        e.target.textContent = '//'}
-    else {
-        galleryVideo.pause()
-        e.target.textContent = '>'}
-})
-
-galleryVideo.addEventListener('click', () => {
-    if(galleryVideo.paused){
-        galleryVideo.play()
-        playButton.textContent = '//'} 
-    else {
-        galleryVideo.pause()
-        playButton.textContent = '>'}
-})
-
-// Volume
-volume.addEventListener('mousemove', (e) => {
-    galleryVideo.volume = e.target.value
-})
-
-// Duration
-const currentTime = () => {
-    let currentMinutes = Math.floor(galleryVideo.currentTime / 60)
-    let currentSeconds = Math.floor(galleryVideo.currentTime - currentMinutes * 60)
-    let durationMinutes = Math.floor(galleryVideo.duration / 60)
-    let durationSeconds = Math.floor(galleryVideo.duration - durationMinutes * 60)
-
-    currentTimeElement.innerHTML = `${currentMinutes}:${currentSeconds < 10 ? '0'+currentSeconds : currentSeconds}`
-    durationTimeElement.innerHTML = `${durationMinutes}:${durationSeconds < 10 ? '0'+durationSeconds : durationSeconds}`}
-
-galleryVideo.addEventListener('timeupdate', currentTime)
-*/

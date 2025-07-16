@@ -43,8 +43,16 @@ ul {
 
 .navbar {
     background: black;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    transition: 0.3s;
     z-index: 998;}
+
+.scroll-down .navbar {
+    transform: translate3d(0, -100%, 0);}
+    
+.scroll-up .navbar {
+    transform: none;}
 
 .navbar .container {
     display: flex;
@@ -418,6 +426,11 @@ ul {
     margin-top: -100px;
     padding-bottom: 0;}
 
+.me-profile-pic {
+    max-height: 400px;
+    margin-top: -90px;
+    margin-bottom: 10px;}
+
 .vertical-gallery-text {
     padding-top: 20px;
     padding-bottom: 0;}
@@ -555,7 +568,7 @@ ul {
     border: 0;}
 
 .half-size {
-    max-width: 25vw;}
+    max-width: 30vw;}
 
 
 
@@ -610,6 +623,9 @@ ul {
     .navbar .mobile-menu {
         display: block;}
 
+    .scroll-down .navbar {
+    transform: none;}
+
     .hero-content {
         width: 380px;}
     
@@ -649,6 +665,9 @@ ul {
 
     .vertical-gallery-text {
         margin-bottom: 60px;}
+
+    .half-size {
+        max-width: 75vw;}
 
     .long-description {
         width: 50vw;}

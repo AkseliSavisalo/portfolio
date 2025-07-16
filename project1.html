@@ -15,7 +15,9 @@
 
 <body>
 
-    <nav class="navbar" id="page-top">
+    <div id="page-top"></div>
+
+    <nav class="navbar">
         <div class="container">
             <div class="logo-container"> <!--Header logo-->
                 <a href="index.html">
@@ -103,8 +105,18 @@
 
             </p>
         </div>
+        <ul class="vertical-gallery gallery-wrap">
+            <li>
+                <img src="images/deck_sketch1.jpg" alt="display" class="vertical-gallery-item half-size" onclick="this.requestFullscreen()">
+                <h2 class="vertical-gallery-text text-center">Designs</h2>
+            </li>
+            <li>
+                <img src="images/deck_sketch2.jpg" alt="display" class="vertical-gallery-item half-size" onclick="this.requestFullscreen()">
+                <h2 class="vertical-gallery-text text-center">Moon progress</h2>
+            </li>
+        </ul>
         <div class="container text-center">
-            <a href="#page-top" class="totop  totop-project-text">&#x28C;</a>
+            <a href="#page-top" class="totop  totop-project-image">&#x28C;</a>
         </div>
         <div id="project-background" class="background-repeat"></div>
         <div id="mobile-project-background" class="background-repeat-mobile"></div>
