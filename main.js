@@ -1,23 +1,11 @@
 // Parallax
 let projectBackground = document.getElementById('project-background')
 let mobileProjectBackground = document.getElementById('mobile-project-background')
-let heroContent = document.getElementById('hero-content')
-let overlay1 = document.getElementById('overlay1')
-let overlay2 = document.getElementById('overlay2')
-let overlay3 = document.getElementById('overlay3')
-let overlay4 = document.getElementById('overlay4')
-let overlay5 = document.getElementById('overlay5')
 
 window.addEventListener('scroll', function(){
     let value = window.scrollY;
     projectBackground.style.top = value * 0.4 + 'px';
     mobileProjectBackground.style.top = value * 0.4 + 'px';
-    heroContent.style.top = value * 0.85 + 'px';
-    overlay1.style.top = value * 0.9 + 'px';
-    overlay2.style.top = value * 0.8 + 'px';
-    overlay3.style.top = value * 0.6 + 'px';
-    overlay4.style.top = value * 0.3 + 'px';
-    overlay5.style.top = value * 0 + 'px';
 })
 
 
@@ -31,9 +19,13 @@ document.onclick = (event) => {
 
 
 
+// Year changer
+document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+
+
 // Header hide
 const body = document.body;
-const nav = document.querySelector(".navbar");
 const scrollUp = "scroll-up";
 const scrollDown = "scroll-down";
 let lastScroll = 0;
@@ -46,13 +38,11 @@ window.addEventListener("scroll", () => {
   if (currentScroll > lastScroll && !body.classList.contains(scrollDown)) {
     // down
     body.classList.remove(scrollUp);
-    body.classList.add(scrollDown);
-    lottiePlayer.play();}
-    else if ( currentScroll < lastScroll && body.classList.contains(scrollDown)) {
+    body.classList.add(scrollDown);}
+    else if (currentScroll < lastScroll && body.classList.contains(scrollDown)) {
     // up
     body.classList.remove(scrollDown);
-    body.classList.add(scrollUp);
-    lottiePlayer.stop();}
+    body.classList.add(scrollUp);}
   lastScroll = currentScroll;
 });
 
