@@ -370,6 +370,19 @@ ul {
     border-top: 2px solid magenta;
     border-bottom: 2px solid magenta;}
 
+.return .return-404 {
+    position: absolute;
+    z-index: 900;
+    transform: translateY(27px);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 7px 20px 13px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    margin-left: 40px;
+    user-select: none;
+    transition: 0.3s;}
+
 .totop {
     position: relative;
     transform: translateX(-2.5%);
@@ -396,6 +409,24 @@ ul {
 
 .totop-project-image {
     margin: 20px 0 -100px;}
+
+.backhome {
+    position: relative;
+    display:inline-block;
+    z-index: 900;
+    transform: translateY(27px);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 7px 20px 13px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    user-select: none;
+    transition: 0.3s;}
+
+.backhome:hover {
+    color: magenta;
+    border-top: 2px solid magenta;
+    border-bottom: 2px solid magenta;}
 
 .vertical-gallery {
     max-width: 1100px;
