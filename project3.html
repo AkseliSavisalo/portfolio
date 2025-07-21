@@ -103,59 +103,59 @@
             
             <ul class="vertical-gallery gallery-wrap">
                 <li>
-                    <img src="images/neon_poster.jpg" alt="display" class="vertical-gallery-item" onclick="this.requestFullscreen()">
+                    <img src="images/neon_poster.jpg" alt="Neon poster" class="vertical-gallery-item lightbox-enabled" data-imagesrc="images/neon_poster.jpg">
                     <h2 class="vertical-gallery-text text-center"></h2>
                 </li>
                 <li>
-                    <img src="images/red_poster.jpg" alt="display" class="vertical-gallery-item" onclick="this.requestFullscreen()">
+                    <img src="images/red_poster.jpg" alt="Red poster" class="vertical-gallery-item lightbox-enabled" data-imagesrc="images/red_poster.jpg">
                     <h2 class="vertical-gallery-text text-center"></h2>
                 </li>
                 <li>
-                    <img src="images/pouty_bg.jpg" alt="display" class="vertical-gallery-item" onclick="this.requestFullscreen()">
+                    <img src="images/pouty_bg.jpg" alt="Pouty" class="vertical-gallery-item lightbox-enabled" data-imagesrc="images/pouty_bg.jpg">
                     <h2 class="vertical-gallery-text text-center"></h2>
                 </li>
                 <li>
-                    <img src="images/splatters_background.jpg" alt="display" class="vertical-gallery-item" onclick="this.requestFullscreen()">
-                    <h2 class="vertical-gallery-text text-center"></h2>
-                </li>
-            </ul>
-            <ul class="vertical-gallery gallery-wrap">
-                <li>
-                    <img src="images/turnaround1.jpg" alt="display" class="vertical-gallery-item half-size" onclick="this.requestFullscreen()">
-                    <h2 class="vertical-gallery-text text-center"></h2>
-                </li>
-                <li>
-                    <img src="images/turnaround2.jpg" alt="display" class="vertical-gallery-item half-size" onclick="this.requestFullscreen()">
-                    <h2 class="vertical-gallery-text text-center"></h2>
-                </li>
-                <li>
-                    <img src="images/lin_ref_body.jpg" alt="display" class="vertical-gallery-item half-size" onclick="this.requestFullscreen()">
-                    <h2 class="vertical-gallery-text text-center"></h2>
-                </li>
-                <li>
-                    <img src="images/lin_ref_face.jpg" alt="display" class="vertical-gallery-item half-size" onclick="this.requestFullscreen()">
-                    <h2 class="vertical-gallery-text text-center"></h2>
-                </li>
-                <li>
-                    <img src="images/lin_sketch1.jpg" alt="display" class="vertical-gallery-item half-size" onclick="this.requestFullscreen()">
+                    <img src="images/splatters_background.jpg" alt="Splatters" class="vertical-gallery-item lightbox-enabled" data-imagesrc="images/splatters_background.jpg">
                     <h2 class="vertical-gallery-text text-center"></h2>
                 </li>
             </ul>
             <ul class="vertical-gallery gallery-wrap">
                 <li>
-                    <img src="images/lin_moodboard.jpg" alt="display" class="vertical-gallery-item half-size" onclick="this.requestFullscreen()">
+                    <img src="images/turnaround1.jpg" alt="Turnaround" class="vertical-gallery-item half-size lightbox-enabled" data-imagesrc="images/turnaround1.jpg">
                     <h2 class="vertical-gallery-text text-center"></h2>
                 </li>
                 <li>
-                    <img src="images/lin_textures.jpg" alt="display" class="vertical-gallery-item half-size" onclick="this.requestFullscreen()">
+                    <img src="images/turnaround2.jpg" alt="Turnaround" class="vertical-gallery-item half-size lightbox-enabled" data-imagesrc="images/turnaround2.jpg">
                     <h2 class="vertical-gallery-text text-center"></h2>
                 </li>
                 <li>
-                    <img src="images/lin_outlined.jpg" alt="display" class="vertical-gallery-item half-size" onclick="this.requestFullscreen()">
+                    <img src="images/lin_ref_body.jpg" alt="Sketch" class="vertical-gallery-item half-size lightbox-enabled" data-imagesrc="images/lin_ref_body.jpg">
                     <h2 class="vertical-gallery-text text-center"></h2>
                 </li>
                 <li>
-                    <img src="images/lin_posing.jpg" alt="display" class="vertical-gallery-item half-size" onclick="this.requestFullscreen()">
+                    <img src="images/lin_ref_face.jpg" alt="Sketch" class="vertical-gallery-item half-size lightbox-enabled" data-imagesrc="images/lin_ref_face.jpg">
+                    <h2 class="vertical-gallery-text text-center"></h2>
+                </li>
+                <li>
+                    <img src="images/lin_sketch1.jpg" alt="Sketch" class="vertical-gallery-item half-size lightbox-enabled" data-imagesrc="images/lin_sketch1.jpg">
+                    <h2 class="vertical-gallery-text text-center"></h2>
+                </li>
+            </ul>
+            <ul class="vertical-gallery gallery-wrap">
+                <li>
+                    <img src="images/lin_moodboard.jpg" alt="Moodboard" class="vertical-gallery-item half-size lightbox-enabled" data-imagesrc="images/lin_moodboard.jpg">
+                    <h2 class="vertical-gallery-text text-center"></h2>
+                </li>
+                <li>
+                    <img src="images/lin_textures.jpg" alt="Texturing" class="vertical-gallery-item half-size lightbox-enabled" data-imagesrc="images/lin_textures.jpg">
+                    <h2 class="vertical-gallery-text text-center"></h2>
+                </li>
+                <li>
+                    <img src="images/lin_outlined.jpg" alt="Texturing" class="vertical-gallery-item half-size lightbox-enabled" data-imagesrc="images/lin_outlined.jpg">
+                    <h2 class="vertical-gallery-text text-center"></h2>
+                </li>
+                <li>
+                    <img src="images/lin_posing.jpg" alt="Posing" class="vertical-gallery-item half-size lightbox-enabled" data-imagesrc="images/lin_posing.jpg">
                     <h2 class="vertical-gallery-text text-center"></h2>
                 </li>
             </ul>
@@ -166,6 +166,15 @@
         <div id="project-background" class="background-repeat"></div>
         <div id="mobile-project-background" class="background-repeat-mobile"></div>
     </section>
+
+    <div class="lightbox-container">
+        <div class="lightbox-image-wrapper">
+            <p class="lightbox-btn left-btn" id="left">&lt;</p>
+            <img alt="lightbox image" class="lightbox-img">
+            <p class="lightbox-btn exit-btn" id="exit">x</p>
+            <p class="lightbox-btn right-btn" id="right">&gt;</p>
+        </div>
+    </div>
 
     <footer>
         <section class="contact">
@@ -189,6 +198,7 @@
         </p>
     </footer>
 
-<script src="main.js"></script>    
+<script src="main.js"></script>
+<script src="lightbox.js"></script>
 </body>
 </html>

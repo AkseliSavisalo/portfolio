@@ -97,66 +97,65 @@
             </p>
             <ul class="vertical-gallery gallery-wrap">
                 <li>
-                    <img src="videos/spindle_run.gif" alt="display" class="vertical-gallery-item-static spindle-gif">
+                    <img src="videos/spindle_run.gif" alt="Running" class="vertical-gallery-item-static spindle-gif lightbox-enabled" data-imagesrc="videos/spindle_run.gif">
                     <h2 class="vertical-gallery-text text-center">Running</h2>
                 </li>
                 <li>
-                    <img src="videos/spindle_attack.gif" alt="display" class="vertical-gallery-item-static spindle-gif">
+                    <img src="videos/spindle_attack.gif" alt="Attacking" class="vertical-gallery-item-static spindle-gif lightbox-enabled" data-imagesrc="videos/spindle_attack.gif">
                     <h2 class="vertical-gallery-text text-center">Attacking</h2>
                 </li>
             </ul>
             <ul class="vertical-gallery gallery-wrap">
                 <li>
-                    <img src="videos/spindle_map.gif" alt="display" class="vertical-gallery-item-static spindle-gif">
+                    <img src="videos/spindle_map.gif" alt="Studying" class="vertical-gallery-item-static spindle-gif lightbox-enabled" data-imagesrc="videos/spindle_map.gif">
                     <h2 class="vertical-gallery-text text-center">Studying</h2>
                 </li>
                 <li>
-                    <img src="videos/spindle_get_up.gif" alt="display" class="vertical-gallery-item-static spindle-gif">
+                    <img src="videos/spindle_get_up.gif" alt="Waking up" class="vertical-gallery-item-static spindle-gif lightbox-enabled" data-imagesrc="videos/spindle_get_up.gif">
                     <h2 class="vertical-gallery-text text-center">Waking up</h2>
                 </li>
-
                 <li>
-                    <img src="videos/spindle_death.gif" alt="display" class="vertical-gallery-item-static spindle-gif">
+                    <img src="videos/spindle_death.gif" alt="Dying" class="vertical-gallery-item-static spindle-gif lightbox-enabled" data-imagesrc="videos/spindle_death.gif">
                     <h2 class="vertical-gallery-text text-center">Dying</h2>
                 </li>
             </ul>
             <ul class="vertical-gallery gallery-wrap">
                 <li>
-                    <img src="videos/spindle_dash.gif" alt="display" class="vertical-gallery-item-static spindle-gif">
+                    <img src="videos/spindle_dash.gif" alt="Dashing" class="vertical-gallery-item-static spindle-gif lightbox-enabled" data-imagesrc="videos/spindle_dash.gif">
                     <h2 class="vertical-gallery-text text-center">Dashing</h2>
                 </li>
                 <li>
-                    <img src="videos/spindle_spell2.gif" alt="display" class="vertical-gallery-item-static spindle-gif">
+                    <img src="videos/spindle_spell2.gif" alt="Diving" class="vertical-gallery-item-static spindle-gif lightbox-enabled" data-imagesrc="videos/spindle_spell2.gif">
                     <h2 class="vertical-gallery-text text-center">Diving</h2>
                 </li>
             </ul>
             <ul class="vertical-gallery gallery-wrap">
                 <li>
-                    <img src="videos/spindle_spell1.gif" alt="display" class="vertical-gallery-item-static spindle-gif">
+                    <img src="videos/spindle_spell1.gif" alt="Spell" class="vertical-gallery-item-static spindle-gif lightbox-enabled" data-imagesrc="videos/spindle_spell1.gif">
                     <h2 class="vertical-gallery-text text-center">Spell</h2>
                 </li>
                 <li>
-                    <img src="videos/spindle_double_jump.gif" alt="display" class="vertical-gallery-item-static spindle-gif">
+                    <img src="videos/spindle_double_jump.gif" alt="Wings" class="vertical-gallery-item-static spindle-gif lightbox-enabled" data-imagesrc="videos/spindle_double_jump.gif">
                     <h2 class="vertical-gallery-text text-center">Wings</h2>
                 </li>
                 <li>
-                    <img src="videos/spindle_focus.gif" alt="display" class="vertical-gallery-item-static spindle-gif">
+                    <img src="videos/spindle_focus.gif" alt="Healing" class="vertical-gallery-item-static spindle-gif lightbox-enabled" data-imagesrc="videos/spindle_focus.gif">
                     <h2 class="vertical-gallery-text text-center">Healing</h2>
                 </li>
             </ul>
             <ul class="vertical-gallery gallery-wrap">
                 <li>
-                    <img src="videos/spindle_flip.gif" alt="display" class="vertical-gallery-item-static spindle-gif">
+                    <img src="videos/spindle_flip.gif" alt="Falling" class="vertical-gallery-item-static spindle-gif lightbox-enabled" data-imagesrc="videos/spindle_flip.gif">
                     <h2 class="vertical-gallery-text text-center">Falling</h2>
                 </li>
                 <li>
-                    <img src="videos/spindle_slug.gif" alt="display" class="vertical-gallery-item-static spindle-gif">
+                    <img src="videos/spindle_slug.gif" alt="Slug" class="vertical-gallery-item-static spindle-gif lightbox-enabled" data-imagesrc="videos/spindle_slug.gif">
                     <h2 class="vertical-gallery-text text-center">Slug</h2>
                 </li>
             </ul>
             <ul class="vertical-gallery gallery-wrap">
                 <li>
-                    <img src="images/spindle_concepts.png" alt="display" class="vertical-gallery-item half-size" onclick="this.requestFullscreen()">
+                    <img src="images/spindle_concepts.png" alt="Spindle concepts" class="vertical-gallery-item half-size lightbox-enabled" data-imagesrc="images/spindle_concepts.png">
                     <h2 class="vertical-gallery-text text-center">Original sketches <br> and palette </h2>
                 </li>
             </ul>
@@ -167,6 +166,15 @@
         <div id="project-background" class="background-repeat"></div>
         <div id="mobile-project-background" class="background-repeat-mobile"></div>
     </section>
+
+        <div class="lightbox-container">
+        <div class="lightbox-image-wrapper">
+            <p class="lightbox-btn left-btn" id="left">&lt;</p>
+            <img alt="lightbox image" class="lightbox-img">
+            <p class="lightbox-btn exit-btn" id="exit">x</p>
+            <p class="lightbox-btn right-btn" id="right">&gt;</p>
+        </div>
+    </div>
 
     <footer>
         <section class="contact">
@@ -190,6 +198,7 @@
         </p>
     </footer>
 
-<script src="main.js"></script>    
+<script src="main.js"></script>
+<script src="lightbox.js"></script>
 </body>
 </html>

@@ -73,6 +73,12 @@
 
     <section class="page-content full-height">
         <div class="container">
+            <a href="index.html" class="return">&lt;</a>
+        </div>
+        <div class="container">
+            <h2 class="portfolio-heading text-center">
+                CV.
+            </h2>
             <ul class="vertical-gallery gallery-wrap">
                 <li>
                     <a href="downloads/cv_english.pdf" class="download-button" download>Download PDF in English</a>
@@ -83,7 +89,7 @@
             </ul>
             <ul class="vertical-gallery gallery-wrap">
                 <li>
-                    <img src="images/cv_english.jpg" alt="display" class="vertical-gallery-item" onclick="this.requestFullscreen()">
+                    <img src="images/cv_english.jpg" alt="CV" class="vertical-gallery-item lightbox-enabled" data-imagesrc="images/cv_english.jpg">
                 </li>
             </ul>
         </div>
@@ -93,6 +99,13 @@
         <div id="project-background" class="background-repeat"></div>
         <div id="mobile-project-background" class="background-repeat-mobile"></div>
     </section>
+
+    <div class="lightbox-container">
+        <div class="lightbox-image-wrapper">
+            <img alt="lightbox image" class="lightbox-img">
+            <p class="lightbox-btn exit-btn" id="exit">x</p>
+        </div>
+    </div>
 
     <footer>
         <section class="contact">
@@ -116,6 +129,7 @@
         </p>
     </footer>
 
-<script src="main.js"></script>    
+<script src="main.js"></script>
+<script src="lightbox.js"></script>
 </body>
 </html>

@@ -81,27 +81,27 @@
             </h2>
             <ul class="vertical-gallery gallery-wrap">
                 <li>
-                    <img src="images/what_does_it_matter.jpg" alt="display" class="vertical-gallery-item white-outlines" onclick="this.requestFullscreen()">
+                    <img src="images/what_does_it_matter.jpg" alt="What the fuck does it matter?" class="vertical-gallery-item white-outlines lightbox-enabled" data-imagesrc="images/what_does_it_matter.jpg">
                     <h2 class="vertical-gallery-text text-center">What the fuck does it matter?</h2>
                 </li>
                 <li>
-                    <img src="images/capitalis_monumentalis.jpg" alt="display" class="vertical-gallery-item" onclick="this.requestFullscreen()">
+                    <img src="images/capitalis_monumentalis.jpg" alt="Capitalis Monumentalis." class="vertical-gallery-item lightbox-enabled" data-imagesrc="images/capitalis_monumentalis.jpg">
                     <h2 class="vertical-gallery-text text-center">Capitalis Monumentalis.</h2>
                 </li>
                 <li>
-                    <img src="images/typografia.jpg" alt="display" class="vertical-gallery-item" onclick="this.requestFullscreen()">
+                    <img src="images/typografia.jpg" alt="Typograpfia" class="vertical-gallery-item lightbox-enabled" data-imagesrc="images/typografia.jpg">
                     <h2 class="vertical-gallery-text text-center">Typograpfia</h2>
                 </li>
                 <li>
-                    <img src="images/violence.jpg" alt="display" class="vertical-gallery-item white-outlines" onclick="this.requestFullscreen()">
+                    <img src="images/violence.jpg" alt="Violence" class="vertical-gallery-item white-outlines lightbox-enabled" data-imagesrc="images/violence.jpg">
                     <h2 class="vertical-gallery-text text-center">Violence</h2>
                 </li>
                 <li>
-                    <img src="images/burnout_4.jpg" alt="display" class="vertical-gallery-item white-outlines" onclick="this.requestFullscreen()">
+                    <img src="images/burnout_4.jpg" alt="This" class="vertical-gallery-item white-outlines lightbox-enabled" data-imagesrc="images/burnout_4.jpg">
                     <h2 class="vertical-gallery-text text-center">This</h2>
                 </li>
                 <li>
-                    <img src="images/unpleasant_vistas.jpg" alt="display" class="vertical-gallery-item" onclick="this.requestFullscreen()">
+                    <img src="images/unpleasant_vistas.jpg" alt="Unpleasant vistas" class="vertical-gallery-item lightbox-enabled" data-imagesrc="images/unpleasant_vistas.jpg">
                     <h2 class="vertical-gallery-text text-center">Unpleasant vistas</h2>
                 </li>
             </ul>
@@ -113,6 +113,15 @@
         <div id="project-background" class="background-repeat"></div>
         <div id="mobile-project-background" class="background-repeat-mobile"></div>
     </section>
+
+    <div class="lightbox-container">
+        <div class="lightbox-image-wrapper">
+            <p class="lightbox-btn left-btn" id="left">&lt;</p>
+            <img alt="lightbox image" class="lightbox-img">
+            <p class="lightbox-btn exit-btn" id="exit">x</p>
+            <p class="lightbox-btn right-btn" id="right">&gt;</p>
+        </div>
+    </div>
 
     <footer>
         <section class="contact">
@@ -136,6 +145,7 @@
         </p>
     </footer>
 
-<script src="main.js"></script>    
+<script src="main.js"></script>
+<script src="lightbox.js"></script>
 </body>
 </html>

@@ -81,15 +81,15 @@
             </h2>
             <ul class="vertical-gallery">
                 <li>
-                    <img src="images/the_smug_moon.png" alt="display" class="vertical-gallery-item skateboard" onclick="this.requestFullscreen()">
+                    <img src="images/the_smug_moon.png" alt="The Smug Moon" class="vertical-gallery-item skateboard lightbox-enabled" data-imagesrc="images/the_smug_moon.png">
                     <h2 class="vertical-gallery-text text-center">The Smug Moon</h2>
                 </li>
                 <li>
-                    <img src="images/pulse.png" alt="display" class="vertical-gallery-item skateboard" onclick="this.requestFullscreen()">
+                    <img src="images/pulse.png" alt="Pulse" class="vertical-gallery-item skateboard lightbox-enabled" data-imagesrc="images/pulse.png">
                     <h2 class="vertical-gallery-text text-center">Pulse</h2>
                 </li>
                 <li>
-                    <img src="images/booty_reaper.png" alt="display" class="vertical-gallery-item skateboard" onclick="this.requestFullscreen()">
+                    <img src="images/booty_reaper.png" alt="Booty reaper" class="vertical-gallery-item skateboard lightbox-enabled" data-imagesrc="images/booty_reaper.png">
                     <h2 class="vertical-gallery-text text-center">Booty reaper</h2>
                 </li>
             </ul>
@@ -97,7 +97,7 @@
 
                 In 2019, I created these illustrations for a group called Sekoittamo, who were designing electrically driven skateboards. <br><br>
 
-                Pulse turned out to be my least favorite of the three illustrations, because it almost feels like it means something.
+                Pulse turned out to be my least favorite of the three illustrations, because it feels like it has a meaning.
                 On the other hand, I love Booty Reaper's nonsense design and its alabaster-and-ink color palette.<br><br>
 
                 To our absolute dismay, Sekoittamo went defunct as a result of the pandemic. The electric skateboard project
@@ -107,11 +107,11 @@
         </div>
         <ul class="vertical-gallery gallery-wrap">
             <li>
-                <img src="images/deck_sketch1.jpg" alt="display" class="vertical-gallery-item half-size" onclick="this.requestFullscreen()">
+                <img src="images/deck_sketch1.jpg" alt="Designs" class="vertical-gallery-item half-size lightbox-enabled" data-imagesrc="images/deck_sketch1.jpg">
                 <h2 class="vertical-gallery-text text-center">Designs</h2>
             </li>
             <li>
-                <img src="images/deck_sketch2.jpg" alt="display" class="vertical-gallery-item half-size" onclick="this.requestFullscreen()">
+                <img src="images/deck_sketch2.jpg" alt="Moon progress" class="vertical-gallery-item half-size lightbox-enabled" data-imagesrc="images/deck_sketch2.jpg">
                 <h2 class="vertical-gallery-text text-center">Moon progress</h2>
             </li>
         </ul>
@@ -121,6 +121,15 @@
         <div id="project-background" class="background-repeat"></div>
         <div id="mobile-project-background" class="background-repeat-mobile"></div>
     </section>
+
+    <div class="lightbox-container">
+        <div class="lightbox-image-wrapper">
+            <p class="lightbox-btn left-btn" id="left">&lt;</p>
+            <img alt="lightbox image" class="lightbox-img">
+            <p class="lightbox-btn exit-btn" id="exit">x</p>
+            <p class="lightbox-btn right-btn" id="right">&gt;</p>
+        </div>
+    </div>
 
     <footer>
         <section class="contact">
@@ -144,6 +153,7 @@
         </p>
     </footer>
 
-<script src="main.js"></script>    
+<script src="main.js"></script>
+<script src="lightbox.js"></script>
 </body>
 </html>

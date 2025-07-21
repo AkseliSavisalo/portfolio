@@ -100,27 +100,27 @@
             </p>
             <ul class="vertical-gallery gallery-wrap">
                 <li>
-                    <img src="images/widowbat_screenshot_front.jpg" alt="display" class="vertical-gallery-item" onclick="this.requestFullscreen()">
+                    <img src="images/widowbat_screenshot_front.jpg" alt="Widow front" class="vertical-gallery-item lightbox-enabled" data-imagesrc="images/widowbat_screenshot_front.jpg">
                     <h2 class="vertical-gallery-text text-center"></h2>
                 </li>
                 <li>
-                    <img src="images/widowbat_screenshot_back.jpg" alt="display" class="vertical-gallery-item" onclick="this.requestFullscreen()">
+                    <img src="images/widowbat_screenshot_back.jpg" alt="Widow back" class="vertical-gallery-item lightbox-enabled" data-imagesrc="images/widowbat_screenshot_back.jpg">
                     <h2 class="vertical-gallery-text text-center"></h2>
                 </li>
                 <li>
-                    <img src="images/widowbat_screenshot_full_moon.jpg" alt="display" class="vertical-gallery-item half-size" onclick="this.requestFullscreen()">
+                    <img src="images/widowbat_screenshot_full_moon.jpg" alt="Widow full moon" class="vertical-gallery-item half-size lightbox-enabled" data-imagesrc="images/widowbat_screenshot_full_moon.jpg">
                     <h2 class="vertical-gallery-text text-center"></h2>
                 </li>
                 <li>
-                    <img src="images/widowbat_screenshot_bat_skype.jpg" alt="display" class="vertical-gallery-item half-size" onclick="this.requestFullscreen()">
+                    <img src="images/widowbat_screenshot_bat_skype.jpg" alt="Widow bat skype" class="vertical-gallery-item half-size lightbox-enabled" data-imagesrc="images/widowbat_screenshot_bat_skype.jpg">
                     <h2 class="vertical-gallery-text text-center"></h2>
                 </li>
                 <li>
-                    <img src="images/widowbat_screenshot_glide1.jpg" alt="display" class="vertical-gallery-item half-size" onclick="this.requestFullscreen()">
+                    <img src="images/widowbat_screenshot_glide1.jpg" alt="Widow glide" class="vertical-gallery-item half-size lightbox-enabled" data-imagesrc="images/widowbat_screenshot_glide1.jpg">
                     <h2 class="vertical-gallery-text text-center"></h2>
                 </li>
                 <li>
-                    <img src="images/widowbat_screenshot_glide2.jpg" alt="display" class="vertical-gallery-item half-size" onclick="this.requestFullscreen()">
+                    <img src="images/widowbat_screenshot_glide2.jpg" alt="Widow glide" class="vertical-gallery-item half-size lightbox-enabled" data-imagesrc="images/widowbat_screenshot_glide2.jpg">
                     <h2 class="vertical-gallery-text text-center"></h2>
                 </li>
             </ul>
@@ -131,6 +131,15 @@
         <div id="project-background" class="background-repeat"></div>
         <div id="mobile-project-background" class="background-repeat-mobile"></div>
     </section>
+
+    <div class="lightbox-container">
+        <div class="lightbox-image-wrapper">
+            <p class="lightbox-btn left-btn" id="left">&lt;</p>
+            <img alt="lightbox image" class="lightbox-img">
+            <p class="lightbox-btn exit-btn" id="exit">x</p>
+            <p class="lightbox-btn right-btn" id="right">&gt;</p>
+        </div>
+    </div>
 
     <footer>
         <section class="contact">
@@ -154,6 +163,7 @@
         </p>
     </footer>
 
-<script src="main.js"></script>    
+<script src="main.js"></script>
+<script src="lightbox.js"></script>
 </body>
 </html>
